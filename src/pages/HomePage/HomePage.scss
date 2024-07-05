@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: -5rem;
+    margin-bottom: -4.5rem;
     z-index: -1;
     width: 100%;
 
@@ -23,14 +23,14 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background: linear-gradient(0deg, #121212 15%, transparent);
+        background: linear-gradient(0deg, #121212 20%, transparent);
         z-index: 1;
     }
 
     &__text {
         z-index: 2;
         position: absolute;
-        bottom: 20%;
+        bottom: 16%;
         left: 1.6rem;
     }
 }
@@ -74,10 +74,10 @@
 
     &__icon {
         margin: 1.5rem 1.5rem 0 1.5rem;
-        filter: brightness(0) saturate(100%) invert(63%) sepia(0%) saturate(7318%) hue-rotate(285deg) brightness(82%) contrast(94%);
+        filter: brightness(0) saturate(100%) invert(68%) sepia(4%) saturate(7%) hue-rotate(341deg) brightness(92%) contrast(83%);    
     }
 
     &__text {
-        color: #848585;
+        color: #9b9b9b;
     }
 }
