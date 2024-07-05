@@ -1,8 +1,16 @@
 import "./Header.scss";
-import React from "react";
+import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header() {
+export default function Header({ selectedSport }) {
+  const [activeLink, setActiveLink] = useState(
+    selectedSport?.selectedSport || "home"
+  );
+
+  function changeActiveLink(e) {
+    setActiveLink(e.target.innerText.toLowerCase());
+  }
+
   return (
     <header>
       <div className="top-bar">
@@ -31,16 +39,40 @@ export default function Header() {
 
       <nav className="nav">
         <ul className="nav__list">
-          <li className="nav__item nav__item--active">
+          <li
+            className={
+              activeLink === "home"
+                ? "nav__item nav__item--active"
+                : "nav__item"
+            }
+            onClick={changeActiveLink}
+          >
             <Link to="/">Home</Link>
           </li>
-          <li className="nav__item">
+          <li
+            className={
+              activeLink === "nba" ? "nav__item nav__item--active" : "nav__item"
+            }
+            onClick={changeActiveLink}
+          >
             <Link to="/fan-zone/nba">NBA</Link>
           </li>
-          <li className="nav__item">
+          <li
+            className={
+              activeLink === "nfl" ? "nav__item nav__item--active" : "nav__item"
+            }
+            onClick={changeActiveLink}
+          >
             <Link to="/fan-zone/nfl">NFL</Link>
           </li>
-          <li className="nav__item">
+          <li
+            className={
+              activeLink === "soccer"
+                ? "nav__item nav__item--active"
+                : "nav__item"
+            }
+            onClick={changeActiveLink}
+          >
             <Link to="/fan-zone/soccer">Soccer</Link>
           </li>
         </ul>

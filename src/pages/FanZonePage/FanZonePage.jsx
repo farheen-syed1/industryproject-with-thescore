@@ -16,7 +16,7 @@ export default function FanZonePage() {
 
   return (
     <>
-      <Header />
+      <Header selectedSport={selectedSport} />
       <main>
         <div>
           <h1>{`Fan Zone for ${selectedSport.selectedSport}`}</h1>
