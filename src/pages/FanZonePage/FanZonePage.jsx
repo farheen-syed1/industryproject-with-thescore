@@ -1,12 +1,16 @@
-import './FanZonePage.scss'
-import React from 'react'
-import Option from '../../components/Option/Option'
+import "./FanZonePage.scss";
+import React from "react";
+import Option from "../../components/Option/Option.jsx";
+import Comments from "../../components/Comments/Comments.jsx"
 export default function FanZonePage() {
   return (
-    <div>
+    <>
+      <div>
         <h1>Fan Zone</h1>
-        <Option option={"Team 1"}/>
-        <Option option={"Team 2"}/>
-        </div>
-  )
+        <Option option={"Team 1"} />
+        <Option option={"Team 2"} />
+      </div>
+      <Comments />
+    </>
+  );
 }
