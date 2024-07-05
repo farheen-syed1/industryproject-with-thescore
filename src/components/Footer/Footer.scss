@@ -1,0 +1,41 @@
+footer {
+    background-color: #090A0B;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 1.2rem 2rem 2rem;
+}
+
+.footer-nav {
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.6rem;
+
+        &--active {
+            .footer-nav__icon {
+                filter: brightness(0) saturate(100%) invert(31%) sepia(28%) saturate(7366%) hue-rotate(202deg) brightness(104%) contrast(108%);
+            }
+
+            .footer-nav__text {
+                color: white;
+            }
+        }
+    }
+
+    &__icon {
+        height: 26px;
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+}

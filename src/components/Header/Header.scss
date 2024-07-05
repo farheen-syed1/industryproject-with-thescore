@@ -1,0 +1,72 @@
+@use "../../styles/__global.scss" as *;
+
+header {
+    background-color: #1B1C1E;
+
+}
+
+.top-bar {
+    padding-top: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    &__avatar {
+        width: 33px;
+        height: 33px;
+    }
+
+    &__logo {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.search-bar {
+    position: relative;
+
+    &__input {
+        border: none;
+        border-radius: 3px;
+        background-color: #2D2E2F;
+        padding: 0.8rem;
+        width: 65vw;
+
+        &::placeholder {
+            padding-left: 2.5rem;
+            color: #717171;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 7px;
+        left: 7px;
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.nav {
+    padding-top: 0.5rem;
+    width: 90%;
+    margin: 0   auto;
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item {
+        padding: 0.8rem 0.4rem;
+        text-transform: uppercase;
+        color: #848585;
+
+        &--active {
+            border-bottom: 2px solid $blue;
+            color: #FFF;
+        }
+    }
+}

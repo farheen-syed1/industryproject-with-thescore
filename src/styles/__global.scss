@@ -1,0 +1,53 @@
+/* VARIABLES */
+$font-stack: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+$black: #1B1C1E;           // Background
+$grey: #848585;            // Inactive icons, less important text
+$white: #FFF;              // Text
+$blue: #0079FF;            // Active icon & nav, avatar outline
+
+
+/* GLOBAL STYLES */
+:root {
+    font-size: 10px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: #121212;
+}
+
+main {
+    padding: 1.6rem 1.6rem 0 1.6rem;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    color: $grey;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $white;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: $white;
+    margin-bottom: 1rem;
+}
