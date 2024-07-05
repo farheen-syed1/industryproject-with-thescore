@@ -2,10 +2,9 @@ import "./Header.scss";
 import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
-export default function Header({ selectedSport }) {
-  const [activeLink, setActiveLink] = useState(
-    selectedSport?.selectedSport || "home"
-  );
+export default function Header({ sport }) {
+  console.log(sport);
+  const [activeLink, setActiveLink] = useState(sportsport || "home");
 
   function changeActiveLink(e) {
     setActiveLink(e.target.innerText.toLowerCase());
@@ -55,7 +54,7 @@ export default function Header({ selectedSport }) {
             }
             onClick={changeActiveLink}
           >
-            <Link to="/fan-zone/nba">NBA</Link>
+            <Link to="/fanzone/nba">NBA</Link>
           </li>
           <li
             className={
@@ -63,7 +62,7 @@ export default function Header({ selectedSport }) {
             }
             onClick={changeActiveLink}
           >
-            <Link to="/fan-zone/nfl">NFL</Link>
+            <Link to="/fanzone/nfl">NFL</Link>
           </li>
           <li
             className={
@@ -73,7 +72,7 @@ export default function Header({ selectedSport }) {
             }
             onClick={changeActiveLink}
           >
-            <Link to="/fan-zone/soccer">Soccer</Link>
+            <Link to="/fanzone/soccer">Soccer</Link>
           </li>
         </ul>
       </nav>

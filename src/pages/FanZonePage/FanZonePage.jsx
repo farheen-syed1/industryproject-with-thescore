@@ -1,13 +1,11 @@
 import "./FanZonePage.scss";
 import React, { useEffect, useState } from "react";
-import { React, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Option from "../../components/Option/Option.jsx";
 import Comments from "../../components/Comments/Comments.jsx";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import commentsData from "../../data/comments.json";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 
 export default function FanZonePage() {
@@ -79,37 +77,41 @@ export default function FanZonePage() {
   }
 
   return (
-    <main className="fan-zone">
-      <div className="fan-zone__header">
-        <h1>Fan Zone</h1>
-      </div>
-      <div className="fan-zone__options">
-        {optionsData.map((option, index) => (
-          <div key={index} className="option-container">
-            <Option
-              imageSrc={option.image}
-              imageAlt={option.full_name}
-              title={option.full_name}
-              subtitle={option.team.name}
-              description={`${option.position} - ${option.team.market}`}
-              height={option.height}
-              weight={option.weight}
-              position={option.position}
-              primary_position={option.primary_position}
-              percentage={option.percentage || 0}
-              onClick={() => handleCardClick(index)}
-              flipped={flipped[index]}
-            />
-          </div>
-        ))}
-      </div>
-      <div className="fan-zone__comments">
-        {commentsData.map((comment) => (
-          <div className="comments__comment" key={comment.name}>
-            <Comments comment={comment} />
-          </div>
-        ))}
-      </div>
-    </main>
+    <>
+      <Header sport={sport} />
+      <main className="fan-zone">
+        <div className="fan-zone__header">
+          <h1>Fan Zone</h1>
+        </div>
+        <div className="fan-zone__options">
+          {optionsData.map((option, index) => (
+            <div key={index} className="option-container">
+              <Option
+                imageSrc={option.image}
+                imageAlt={option.full_name}
+                title={option.full_name}
+                subtitle={option.team.name}
+                description={`${option.position} - ${option.team.market}`}
+                height={option.height}
+                weight={option.weight}
+                position={option.position}
+                primary_position={option.primary_position}
+                percentage={option.percentage || 0}
+                onClick={() => handleCardClick(index)}
+                flipped={flipped[index]}
+              />
+            </div>
+          ))}
+        </div>
+        <div className="fan-zone__comments">
+          {commentsData.map((comment) => (
+            <div className="comments__comment" key={comment.name}>
+              <Comments comment={comment} />
+            </div>
+          ))}
+        </div>
+      </main>
+      <Footer />
+    </>
   );
 }

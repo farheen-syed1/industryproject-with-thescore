@@ -9,7 +9,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/nhl" element={<FanZonePage />} />
+          <Route path="/fanzone/:sport" element={<FanZonePage />} />
         </Routes>
       </BrowserRouter>
     </>
