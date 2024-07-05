@@ -3,4 +3,27 @@
     font-weight: 600;
     color: white;
     margin-bottom: 1rem;
-}
+  }
+  
+  .fan-zone {
+    &__header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+  
+    &__options {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+  
+      @media (max-width: 768px) {
+        transform: scale(0.7);
+        margin-bottom: -5rem;
+      }
+    }
+  
+    &__comments {
+      margin-top: 2rem;
+    }
+  }
+  
