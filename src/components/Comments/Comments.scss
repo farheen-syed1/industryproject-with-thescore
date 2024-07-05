@@ -1,6 +1,7 @@
 .comment {
   display: flex;
-  justify-content: space-between;
+  // justify-content: space-between;
+  gap: 1rem;
   &__avatar {
     background-color: lightgrey;
     height: 2.5rem;

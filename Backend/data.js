@@ -10,7 +10,7 @@ export const nbaPlayers = [{
             "market": "Los Angeles",
             "alias": "LAL"
         },
-        "image": "/images/lebron.png"
+        "image": "http://localhost:3000/images/lebron.png"
     },
     {
         "full_name": "Stephen Curry",
@@ -23,7 +23,7 @@ export const nbaPlayers = [{
             "market": "Golden State",
             "alias": "GSW"
         },
-        "image": "/images/curry.png"
+        "image": "http://localhost:3000/images/curry.png"
     },
     {
         "full_name": "Giannis Antetokounmpo",
@@ -36,7 +36,7 @@ export const nbaPlayers = [{
             "market": "Milwaukee",
             "alias": "MIL"
         },
-        "image": "/images/giannis.png"
+        "image": "http://localhost:3000/images/giannis.png"
     },
     {
         "full_name": "Kevin Durant",
@@ -49,7 +49,7 @@ export const nbaPlayers = [{
             "market": "Phoenix",
             "alias": "PHX"
         },
-        "image": "/images/durant.png"
+        "image": "http://localhost:3000/images/durant.png"
     },
     {
         "full_name": "Joel Embiid",
@@ -62,7 +62,7 @@ export const nbaPlayers = [{
             "market": "Philadelphia",
             "alias": "PHI"
         },
-        "image": "/images/embiid.png"
+        "image": "http://localhost:3000/images/embiid.png"
     }
 ];
 
@@ -77,7 +77,7 @@ export const soccerPlayers = [{
             "market": "Miami",
             "alias": "MIA"
         },
-        "image": "/images/messi.png"
+        "image": "http://localhost:3000/images/messi.png"
     },
     {
         "full_name": "Cristiano Ronaldo",
@@ -90,7 +90,7 @@ export const soccerPlayers = [{
             "market": "Riyadh",
             "alias": "ALN"
         },
-        "image": "/images/ronaldo.png"
+        "image": "http://localhost:3000/images/ronaldo.png"
     },
     {
         "full_name": "Neymar Jr",
@@ -103,7 +103,7 @@ export const soccerPlayers = [{
             "market": "Riyadh",
             "alias": "ALH"
         },
-        "image": "/images/neymar.png"
+        "image": "http://localhost:3000/images/neymar.png"
     },
     {
         "full_name": "Kevin De Bruyne",
@@ -116,7 +116,7 @@ export const soccerPlayers = [{
             "market": "Manchester",
             "alias": "MCI"
         },
-        "image": "/images/debruyne.png"
+        "image": "http://localhost:3000/images/debruyne.png"
     },
     {
         "full_name": "Kylian Mbappé",
@@ -129,7 +129,7 @@ export const soccerPlayers = [{
             "market": "Paris",
             "alias": "PSG"
         },
-        "image": "/images/mbappe.png"
+        "image": "http://localhost:3000/images/mbappe.png"
     }
 ];
 
@@ -144,7 +144,7 @@ export const nflPlayers = [{
             "market": "Kansas City",
             "alias": "KC"
         },
-        "image": "/images/mahomes.png"
+        "image": "http://localhost:3000/images/mahomes.png"
     },
     {
         "full_name": "Tom Brady",
@@ -157,7 +157,7 @@ export const nflPlayers = [{
             "market": "Tampa Bay",
             "alias": "TB"
         },
-        "image": "/images/tbrady.png"
+        "image": "http://localhost:3000/images/tbrady.png"
     },
     {
         "full_name": "Aaron Donald",
@@ -170,7 +170,7 @@ export const nflPlayers = [{
             "market": "Los Angeles",
             "alias": "LA"
         },
-        "image": "/images/adonald.png"
+        "image": "http://localhost:3000/images/adonald.png"
     },
     {
         "full_name": "Derrick Henry",
@@ -183,7 +183,7 @@ export const nflPlayers = [{
             "market": "Tennessee",
             "alias": "TEN"
         },
-        "image": "/images/dhenry.png"
+        "image": "http://localhost:3000/images/dhenry.png"
     },
     {
         "full_name": "Davante Adams",
@@ -196,6 +196,6 @@ export const nflPlayers = [{
             "market": "Las Vegas",
             "alias": "LV"
         },
-        "image": "/images/dadams.png"
+        "image": "http://localhost:3000/images/dadams.png"
     }
 ];
