@@ -14,10 +14,9 @@ const port = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-console.log('RAPIDAPI_KEY:', process.env.RAPIDAPI_KEY);
 
 app.get('/', (req, res) => {
-  res.send('Hello World!');
+    res.send('Hello World!');
 });
 
 app.use('/api/nba', nbaRouter);
@@ -25,7 +24,7 @@ app.use('/api/nfl', nflRouter);
 app.use('/api/soccer', soccerRouter);
 
 app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
+    console.log(`Server is running on port ${port}`);
 });
 
 export default app;
