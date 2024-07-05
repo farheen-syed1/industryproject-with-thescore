@@ -1,17 +1,10 @@
-import { React, useState } from "react";
+import { React } from "react";
 import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import "./HomePage.scss";
 
 export default function HomePage() {
-  const [selectedSport, setSelectedSport] = useState(null);
-
-  function handleSportSelect(e) {
-    setSelectedSport(e.target.id);
-    console.log(`Selected sport is ${selectedSport}`);
-  }
-
   return (
     <>
       <Header />
@@ -38,12 +31,7 @@ export default function HomePage() {
         </p>
 
         <section className="homepage-cards-section">
-          <Link
-            to="/fan-zone/nba"
-            className="homepage-card"
-            id="nba"
-            onClick={handleSportSelect}
-          >
+          <Link to="/fan-zone/nba" className="homepage-card" id="nba">
             <img
               className="homepage-card__icon"
               id="nba"
@@ -55,12 +43,7 @@ export default function HomePage() {
             </h3>
           </Link>
 
-          <Link
-            to="/fan-zone/nfl"
-            className="homepage-card"
-            id="nfl"
-            onClick={handleSportSelect}
-          >
+          <Link to="/fan-zone/nfl" className="homepage-card" id="nfl">
             <img
               className="homepage-card__icon"
               id="nfl"
@@ -72,12 +55,7 @@ export default function HomePage() {
             </h3>
           </Link>
 
-          <Link
-            to="/fan-zone/soccer"
-            className="homepage-card"
-            id="soccer"
-            onClick={handleSportSelect}
-          >
+          <Link to="/fan-zone/soccer" className="homepage-card" id="soccer">
             <img
               className="homepage-card__icon"
               id="soccer"
