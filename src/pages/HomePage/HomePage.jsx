@@ -21,13 +21,11 @@ export default function HomePage() {
       </section>
       <main className="main">
         <h2 className="main__headline">
-          We need more text to explain what this actually is but I'm bad at
-          writing
+          Your favourite player goes head to head with the rest! Vote to keep
+          them winning!
         </h2>
         <p className="main__copy">
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero, quae
-          molestias facere sequi quibusdam corporis accusamus inventore ea
-          veritatis dolorem.
+          Click below to get started with your favourite sport.
         </p>
 
         <section className="homepage-cards-section">
