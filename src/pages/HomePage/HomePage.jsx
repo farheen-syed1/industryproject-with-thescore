@@ -31,7 +31,7 @@ export default function HomePage() {
         </p>
 
         <section className="homepage-cards-section">
-          <Link to="/fan-zone/nba" className="homepage-card" id="nba">
+          <Link to="/fanzone/nba" className="homepage-card" id="nba">
             <img
               className="homepage-card__icon"
               id="nba"
@@ -43,7 +43,7 @@ export default function HomePage() {
             </h3>
           </Link>
 
-          <Link to="/fan-zone/nfl" className="homepage-card" id="nfl">
+          <Link to="/fanzone/nfl" className="homepage-card" id="nfl">
             <img
               className="homepage-card__icon"
               id="nfl"
@@ -55,7 +55,7 @@ export default function HomePage() {
             </h3>
           </Link>
 
-          <Link to="/fan-zone/soccer" className="homepage-card" id="soccer">
+          <Link to="/fanzone/soccer" className="homepage-card" id="soccer">
             <img
               className="homepage-card__icon"
               id="soccer"
