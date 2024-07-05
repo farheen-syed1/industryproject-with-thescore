@@ -1,0 +1,49 @@
+/* VARIABLES */
+$font-stack: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+$black: #1B1C1E;           // Background
+$darkgrey: #2D2E2F;        // Search input and avatar placeholder BG
+$midgrey: #717171;         // Search input text
+$lightgrey: #848585;       // Inactive icons
+$white: #FFF;              // Text
+$blue: #0079FF;            // Active icon & nav, avatar outline
+
+
+/* GLOBAL STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: $font-stack;
+}
+
+body {
+    background-color: $black;
+}
+
+p {
+    font-size: 12px;
+    font-weight: 400;
+    color: $lightgrey;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $white;
+}
+
+h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: $white;
+}
+
+h3 {
+    font-size: 13px;
+    font-weight: 600;
+    color: $white;
+}
+
+.active {
+    filter: brightness(0) saturate(100%) invert(31%) sepia(28%) saturate(7366%) hue-rotate(202deg) brightness(104%) contrast(108%);
+}
