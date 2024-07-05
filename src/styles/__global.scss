@@ -9,6 +9,10 @@ $blue: #0079FF;            // Active icon & nav, avatar outline
 
 
 /* GLOBAL STYLES */
+:root {
+    font-size: 10px;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -17,7 +21,7 @@ $blue: #0079FF;            // Active icon & nav, avatar outline
 }
 
 body {
-    background-color: $black;
+    background-color: #121212;
 }
 
 p {
