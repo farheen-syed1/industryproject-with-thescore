@@ -31,8 +31,8 @@ export default function Header() {
       <nav className="nav">
         <ul className="nav__list">
           <li className="nav__item nav__item--active">Home</li>
+          <li className="nav__item">NBA</li>
           <li className="nav__item">NFL</li>
-          <li className="nav__item">NHL</li>
           <li className="nav__item">Soccer</li>
         </ul>
       </nav>
