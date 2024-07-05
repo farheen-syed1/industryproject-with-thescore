@@ -1,0 +1,28 @@
+.comment {
+  display: flex;
+  justify-content: space-between;
+  &__avatar {
+    background-color: lightgrey;
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border-radius: 50%;
+    
+  }
+  &__img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 0;
+  }
+  &__box {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+  }
+  &__metadata {
+    font-weight: bold;
+  }
+  &__text {
+    font-weight: normal;
+  }
+}
