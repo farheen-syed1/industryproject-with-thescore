@@ -1,5 +1,6 @@
 import "./Header.scss";
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -30,10 +31,18 @@ export default function Header() {
 
       <nav className="nav">
         <ul className="nav__list">
-          <li className="nav__item nav__item--active">Home</li>
-          <li className="nav__item">NBA</li>
-          <li className="nav__item">NFL</li>
-          <li className="nav__item">Soccer</li>
+          <li className="nav__item nav__item--active">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/fan-zone/nba">NBA</Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/fan-zone/nfl">NFL</Link>
+          </li>
+          <li className="nav__item">
+            <Link to="/fan-zone/soccer">Soccer</Link>
+          </li>
         </ul>
       </nav>
     </header>

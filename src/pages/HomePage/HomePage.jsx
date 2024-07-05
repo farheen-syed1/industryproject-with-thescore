@@ -1,9 +1,17 @@
-import React from "react";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import "./HomePage.scss";
 
 export default function HomePage() {
+  const [selectedSport, setSelectedSport] = useState(null);
+
+  function handleSportSelect(e) {
+    setSelectedSport(e.target.id);
+    console.log(`Selected sport is ${selectedSport}`);
+  }
+
   return (
     <>
       <Header />
@@ -30,30 +38,56 @@ export default function HomePage() {
         </p>
 
         <section className="homepage-cards-section">
-          <div className="homepage-card">
+          <Link
+            to="/fan-zone/nba"
+            className="homepage-card"
+            id="nba"
+            onClick={handleSportSelect}
+          >
             <img
               className="homepage-card__icon"
+              id="nba"
               src="/src/assets/basketball-icon.svg"
               alt="Basketball icon"
             />
-            <h3 className="homepage-card__text">Basketball</h3>
-          </div>
-          <div className="homepage-card">
+            <h3 className="homepage-card__text" id="nba">
+              Basketball
+            </h3>
+          </Link>
+
+          <Link
+            to="/fan-zone/nfl"
+            className="homepage-card"
+            id="nfl"
+            onClick={handleSportSelect}
+          >
             <img
               className="homepage-card__icon"
+              id="nfl"
               src="/src/assets/football-icon.svg"
               alt="Football icon"
             />
-            <h3 className="homepage-card__text">Football</h3>
-          </div>
-          <div className="homepage-card">
+            <h3 className="homepage-card__text" id="nfl">
+              Football
+            </h3>
+          </Link>
+
+          <Link
+            to="/fan-zone/soccer"
+            className="homepage-card"
+            id="soccer"
+            onClick={handleSportSelect}
+          >
             <img
               className="homepage-card__icon"
+              id="soccer"
               src="/src/assets/soccer-icon.svg"
               alt="Soccer ball icon"
             />
-            <h3 className="homepage-card__text">Soccer</h3>
-          </div>
+            <h3 className="homepage-card__text" id="soccer">
+              Soccer
+            </h3>
+          </Link>
         </section>
       </main>
       <Footer />

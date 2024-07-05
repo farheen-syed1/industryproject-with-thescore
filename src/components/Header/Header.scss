@@ -62,11 +62,17 @@ header {
     &__item {
         padding: 0.8rem 0.4rem;
         text-transform: uppercase;
-        color: #848585;
+
+        a {
+            color: #848585;
+
+        }
 
         &--active {
             border-bottom: 2px solid $blue;
-            color: #FFF;
+            a {
+                color: #FFF;
+            }
         }
     }
 }
