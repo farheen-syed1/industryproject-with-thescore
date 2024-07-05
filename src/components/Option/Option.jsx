@@ -13,7 +13,7 @@ const Option = ({ imageSrc, imageAlt, title, subtitle, description, height, weig
           </div>
         </div>
         <div className="option__content">
-          <h3 className="option__title">{title}</h3>
+          <label className="option__title">{title}</label>
           <p className="option__subtitle">{subtitle}</p>
           <p className="option__description">{description}</p>
           <p className="option__details">

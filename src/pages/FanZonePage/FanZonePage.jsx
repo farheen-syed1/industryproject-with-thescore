@@ -13,25 +13,26 @@ export default function FanZonePage() {
   const [error, setError] = useState(null);
   const { sport } = useParams();
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        console.log("Fetching data from: ", `http://localhost:3000/api/${sport}`);
-        const response = await axios.get(`http://localhost:3000/api/${sport}`);
-        console.log("Server response:", response.data);
-        if (response.data && Array.isArray(response.data)) {
-          setOptionsData(response.data);
-        } else {
-          throw new Error("Data is not an array");
-        }
-      } catch (error) {
-        console.error("Error fetching data:", error);
-        setError(error.message);
-      } finally {
-        setLoading(false);
+  const fetchData = async () => {
+    try {
+      setLoading(true);
+      console.log("Fetching data from: ", `http://localhost:3000/api/${sport}`);
+      const response = await axios.get(`http://localhost:3000/api/${sport}`);
+      console.log("Server response:", response.data);
+      if (response.data && Array.isArray(response.data)) {
+        setOptionsData(response.data);
+      } else {
+        throw new Error("Data is not an array");
       }
-    };
+    } catch (error) {
+      console.error("Error fetching data:", error);
+      setError(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
+  useEffect(() => {
     fetchData();
   }, [sport]);
 
@@ -61,6 +62,11 @@ export default function FanZonePage() {
         });
       }, 500);
     }
+  };
+
+  const handleNextClick = () => {
+    fetchData();
+    setFlipped([false, false]);
   };
 
   if (loading) {
@@ -96,6 +102,7 @@ export default function FanZonePage() {
           </div>
         ))}
       </div>
+      <button className="fan-zone__next-button" onClick={handleNextClick}>Next</button>
       <div className="fan-zone__comments">
         {commentsData.map((comment) => (
           <div className="comments__comment" key={comment.name}>
