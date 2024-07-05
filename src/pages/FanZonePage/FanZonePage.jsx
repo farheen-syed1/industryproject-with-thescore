@@ -3,17 +3,20 @@ import { React, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Option from "../../components/Option/Option.jsx";
 import Comments from "../../components/Comments/Comments.jsx";
+import Header from "../../components/Header/Header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import commentsData from "../../data/comments.json";
 
 export default function FanZonePage() {
   const selectedSport = useParams();
 
-  useEffect(() => {
-    console.log(selectedSport.selectedSport);
-  }, [selectedSport]);
+  // useEffect(() => {
+  //   console.log(selectedSport.selectedSport);
+  // }, [selectedSport]);
 
   return (
     <>
+      <Header />
       <main>
         <div>
           <h1>{`Fan Zone for ${selectedSport.selectedSport}`}</h1>
@@ -28,6 +31,7 @@ export default function FanZonePage() {
           );
         })}
       </main>
+      <Footer />
     </>
   );
 }
