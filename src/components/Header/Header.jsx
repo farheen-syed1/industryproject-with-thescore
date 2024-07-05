@@ -3,8 +3,7 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 export default function Header({ sport }) {
-  console.log(sport);
-  const [activeLink, setActiveLink] = useState(sportsport || "home");
+  const [activeLink, setActiveLink] = useState(sport || "home");
 
   function changeActiveLink(e) {
     setActiveLink(e.target.innerText.toLowerCase());
