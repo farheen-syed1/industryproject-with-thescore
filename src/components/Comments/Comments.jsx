@@ -9,7 +9,7 @@ export default function Comments({comment}) {
         <div className="comment__avatar"><img className="comment__img" src={avatar}/> </div>
         <div className="comment__box">
           <div className="comment__metadata">
-            ${comment.name} - {comment.time}
+            {comment.name} - {comment.time}
           </div>
           <div className="comment__text">{comment.comment}</div>
         </div>
