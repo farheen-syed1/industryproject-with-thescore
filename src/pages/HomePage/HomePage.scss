@@ -1,0 +1,30 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__img {
+        height: 35vh;
+    }
+
+    &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(0deg, #121212 10%, transparent);
+        z-index: 1;
+    }
+
+    &__text {
+        z-index: 2;
+        position: absolute;
+        bottom: 20%;
+        left: 1.6rem;
+    }
+}
