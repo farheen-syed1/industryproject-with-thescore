@@ -11,7 +11,9 @@ $blue: #0079FF;            // Active icon & nav, avatar outline
     font-size: 10px;
 }
 
-* {
+*,
+::before,
+::after {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
