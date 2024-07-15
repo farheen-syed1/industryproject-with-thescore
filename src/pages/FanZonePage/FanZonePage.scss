@@ -1,0 +1,30 @@
+.comments__comment {
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 1rem;
+  }
+  
+  .fan-zone {
+    &__header {
+      margin-top: 0.5rem;
+      text-align: center;
+      padding-bottom: 1rem;
+    }
+  
+    &__options {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+  
+      @media (max-width: 768px) {
+        transform: scale(0.7);
+        margin-bottom: -5rem;
+      }
+    }
+  
+    &__comments {
+      margin-top: 2rem;
+    }
+  }
+  
